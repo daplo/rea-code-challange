@@ -1,73 +1,78 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        rea-code-challenge
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+	<div class="page">
+		<Header />
+
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 results">
+						<div class="row">
+							<div class="col-12">
+								<h3>Results</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<Property
+									v-for="item in properties"
+									:item="item"
+									:isSaved="false"
+									:key="item.id"
+								></Property>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 saved">
+						<div class="row">
+							<div class="col-12">
+								<h3>Saved Properties</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<Property
+									v-for="item in savedProperties"
+									:item="item"
+									:isSaved="true"
+									:key="item.id"
+								></Property>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </template>
 
 <script>
-export default {}
+export default {
+	components: true,
+	data() {
+		return {
+			item: "Dddd",
+		};
+	},
+
+	computed: {
+		properties() {
+			return this.$store.getters.getResults;
+		},
+		savedProperties() {
+			return this.$store.getters.getSaved;
+		},
+	},
+};
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+	margin: 2rem auto;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #ccc;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 </style>

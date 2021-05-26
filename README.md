@@ -24,9 +24,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ###TODOS:
 # set up the project / config- done
-# layout 
-# data + state 
-# property single compontnet 
+# layout - Done
+# data + state - Done
+# property single compontnet - Done
 # tests
 
 
