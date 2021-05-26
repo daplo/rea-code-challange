@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Property Property component 1`] = `
+"<div class=\\"card overflow-hidden mb-2 p-0 remove\\">
+  <!---->
+  <!---->
+  <div class=\\"row no-gutters\\">
+    <div class=\\"col-md-12\\">
+      <div class=\\"agency-logo-wrapper\\" style=\\"background-color: rgb(0, 71, 127);\\"><img src=\\"https://i1.au.reastatic.net/170x32/d9e65c666e427e655fb63dcfe73f50d4ac7ff9a58c173db9474bd92e75b01070/main.gif\\" class=\\"agency-logo\\"></div> <img src=\\"https://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg\\" alt=\\"Image\\" class=\\"rounded-0 card-img\\">
+    </div>
+    <div class=\\"col-md-12\\">
+      <div class=\\"card-body\\">
+        <!---->
+        <!---->
+        <p class=\\"card-text\\">
+          <h3>$726,500</h3>
+        </p>
+      </div>
+      <div class=\\"buttonOverlay\\"><button type=\\"button\\" class=\\"btn addOrRemoveButton btn-warning btn-lg\\">
+          Remove
+        </button></div>
+    </div>
+  </div>
+  <!---->
+  <!---->
+</div>"
+`;

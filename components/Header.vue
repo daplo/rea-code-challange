@@ -4,6 +4,7 @@
       <div class="row">
         <div class="col">
           <Logo />
+         <p class="mt-2">REA Coding Challenge  - Daniel Ploskonka</p>
         </div>
     </div>
    </div>

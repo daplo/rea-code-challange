@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Page renders the main page 1`] = `
+"<div class=\\"page\\">
+  <header-stub></header-stub>
+  <section class=\\"main\\">
+    <div class=\\"container\\">
+      <div class=\\"row\\">
+        <div class=\\"col-lg-6 results\\">
+          <div class=\\"row\\">
+            <div class=\\"col-12\\">
+              <h3>Results</h3>
+            </div>
+          </div>
+          <div class=\\"row\\">
+            <div class=\\"col-12\\">
+              <property-stub item=\\"[object Object]\\"></property-stub>
+              <property-stub item=\\"[object Object]\\"></property-stub>
+              <property-stub item=\\"[object Object]\\"></property-stub>
+            </div>
+          </div>
+        </div>
+        <div class=\\"col-lg-6 saved\\">
+          <div class=\\"row\\">
+            <div class=\\"col-12\\">
+              <h3>Saved Properties</h3>
+            </div>
+          </div>
+          <div class=\\"row\\">
+            <div class=\\"col-12\\">
+              <property-stub issaved=\\"true\\" item=\\"[object Object]\\"></property-stub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>"
+`;

@@ -46,8 +46,12 @@
 </template>
 
 <script>
+import Header from '@/components/Header';
+import Property from '@/components/Property';
 export default {
-	components: true,
+	components: {
+		Property, Header
+	},
 	data() {
 		return {
 			item: "Dddd",
@@ -74,5 +78,12 @@ export default {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+	.results,
+	.saved {
+		min-width: 500px;
+	}
 }
 </style>

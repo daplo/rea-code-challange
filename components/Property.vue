@@ -24,9 +24,9 @@
               class="addOrRemoveButton"
               @click="removeOrSave"
               size="lg"
-              :variant="isSaved ? 'warning' : 'primary'">{{
-							isSaved ? "Remove" : "Save Property"
-						}}</b-button>
+              :variant="isSaved ? 'warning' : 'primary'">
+                {{ isSaved ? "Remove" : "Add" }}
+            </b-button>
         </div>
 			</b-col>
 		</b-row>
@@ -37,11 +37,7 @@
 export default {
 	name: "Property",
 	props: ["item", "isSaved"],
-	data() {
-		return {
-			isPropertySaved: false,
-		};
-	},
+
 	methods: {
 		removeOrSave() {
 			if (this.isSaved) {
@@ -89,7 +85,7 @@ export default {
     top:100%;
     bottom:-100%;
     z-index: 0;
-    transition: .2s ease all;
+    transition: .3s ease all;
     background: rgba(0,0,0,.6);
 
     .btn {
