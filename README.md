@@ -17,14 +17,20 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+#run unit test
+$ jest
+
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-
-###TODOS:
-# set up the project / config- done
+```
+TODOS:
+# set up the project / config- Done
 # layout - Done
 # data + state - Done
 # property single compontnet - Done
-# tests - done
+# tests - Done
+
+```
