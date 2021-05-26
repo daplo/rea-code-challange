@@ -9,11 +9,13 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'plugin:prettier/recommended',
     'plugin:nuxt/recommended'
   ],
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "indent": [2, "tab"],
+        "no-tabs": 0
+  }
 }
