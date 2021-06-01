@@ -53,9 +53,7 @@ export default {
 		Property, Header
 	},
 	data() {
-		return {
-			item: "Dddd",
-		};
+		return {};
 	},
 
 	computed: {

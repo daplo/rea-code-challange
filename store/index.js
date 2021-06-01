@@ -66,21 +66,10 @@ export const mutations = {
 
 	removePropertyFromResults(state, property) {
 		let results = state.properties.results;
+		let found = results.findIndex(el => el.id == property.id);
 
-		//looking for property in results and comparing ids
-		for (var i=0; i < results.length; i++) {
-			if (results[i].id === property.id) {
-
-				//finding the index of the property
-				const index = results.indexOf(results[i]);
-
-				//if poroperty found
-				if (index > -1) {
-
-					//remove property from the array of properties
-					results.splice(index, 1);
-				}
-			}
+		if (found != undefined){
+			results.splice(found, 1);
 		}
 	},
 
@@ -92,21 +81,10 @@ export const mutations = {
 	
 	removePropertyFromSaved(state, property) {
 		let results = state.properties.saved;
+		let found = results.findIndex( el => el.id == property.id);
 
-		//looking for property in results and comparing ids
-		for (var i=0; i < results.length; i++) {
-			if (results[i].id === property.id) {
-
-				//finding the index of the property
-				const index = results.indexOf(results[i]);
-
-				//if poroperty found
-				if (index > -1) {
-
-					//remove property from the array of properties
-					results.splice(index, 1);
-				}
-			}
+		if (found != undefined){
+			results.splice(found, 1);
 		}
 	}
 };
